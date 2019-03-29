@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CAKE</string>
+    <string name="header">Create Set</string>
+    <string name="wrd">Enter Vocab Word Here</string>
+    <string name="def">Enter Definition Here</string>
+    <string name="addWrdBtn">Add Word To Set</string>
+</resources>
