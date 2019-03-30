@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:textSize="80sp"
             android:textAlignment="center"
-            android:id="@+id/textView2"
+            android:id="@+id/header"
             android:layout_marginTop="40dp"
             app:layout_constraintTop_toTopOf="parent"/>
 
@@ -28,7 +28,7 @@
             android:hint="@string/wrd"
             android:ems="10"
             android:background="#B2FF3E4F"
-            android:id="@+id/editText" android:layout_marginEnd="8dp"
+            android:id="@+id/vocabWordBox" android:layout_marginEnd="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="216dp"
             app:layout_constraintTop_toTopOf="parent"/>
@@ -43,10 +43,10 @@
             android:hint="@string/def"
             android:background="#A43EFFFF"
             android:ems="10"
-            android:id="@+id/editText2"
+            android:id="@+id/definitionBox"
             android:layout_marginTop="304dp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/editText" app:layout_constraintStart_toStartOf="@+id/editText"/>
+            app:layout_constraintEnd_toEndOf="@+id/vocabWordBox" app:layout_constraintStart_toStartOf="@+id/vocabWordBox"/>
 
     <Button
             android:layout_width="172dp"
@@ -54,8 +54,15 @@
             android:background="#81D53EFF"
             android:layout_height="wrap_content"
             android:textColor="#FFF"
-            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:id="@+id/addBtn" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
             app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginTop="56dp"
-            app:layout_constraintTop_toBottomOf="@+id/editText2"/>
+            app:layout_constraintTop_toBottomOf="@+id/definitionBox"/>
+    <TextView
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setItems" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp" android:layout_marginBottom="188dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintHorizontal_bias="0.521"/>
 
 </android.support.constraint.ConstraintLayout>
